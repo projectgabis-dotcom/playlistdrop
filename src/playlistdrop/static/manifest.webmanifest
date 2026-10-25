@@ -3,8 +3,8 @@
   "short_name": "PlaylistDrop",
   "start_url": "/",
   "display": "standalone",
-  "background_color": "#f4f5f8",
-  "theme_color": "#2f55d4",
+  "background_color": "#f1f1ec",
+  "theme_color": "#f1f1ec",
   "icons": [
     { "src": "/static/icon.svg", "sizes": "any", "type": "image/svg+xml" },
     { "src": "/static/icon-180.png", "sizes": "180x180", "type": "image/png" }

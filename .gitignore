@@ -6,6 +6,8 @@ dist/
 build/
 *.egg-info/
 downloads/
-.impeccable/
+.impeccable/*
+!.impeccable/surfaces/
+!.impeccable/design.json
 .claude/
 PROGRESS.md

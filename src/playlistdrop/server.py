@@ -215,11 +215,14 @@ def create_app(
 
 LOCKED_PAGE = """<!doctype html><html lang="en"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>PlaylistDrop · locked</title>
-<style>body{font:17px/1.5 -apple-system,system-ui,sans-serif;background:#0f1115;color:#e8e8ea;
-display:grid;place-items:center;min-height:100vh;margin:0;padding:24px;text-align:center}
-p{color:#9a9ca5;max-width:22rem}</style></head><body><div>
-<svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#7d8cff" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><rect x="5" y="11" width="14" height="10" rx="2"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></svg>
+<title>PlaylistDrop · scan to connect</title>
+<style>@font-face{font-family:Archivo;src:url(/static/archivo-latin.woff2) format("woff2");font-weight:700 900;font-stretch:62% 100%}
+body{font:17px/1.45 -apple-system,system-ui,sans-serif;background:#141414;color:#f1f1ec;
+display:grid;place-items:center;min-height:100vh;margin:0;padding:24px}
+div{max-width:22rem}h1{font:900 36px/1 Archivo,sans-serif;font-stretch:62%;text-transform:uppercase;margin:18px 0 10px}
+.s{width:64px;height:64px;border-radius:50%;background:#ff6a13;transform:rotate(-6deg)}
+p{color:#b4b4ad;margin:0}</style></head><body><div>
+<div class="s" aria-hidden="true"></div>
 <h1>Scan to connect</h1>
-<p>Open PlaylistDrop by scanning the QR code shown in the terminal on your computer.
-It contains a private key so only you can use it.</p></div></body></html>"""
+<p>Open PlaylistDrop by scanning the QR code in the terminal on your computer.
+The code carries a private key, so only you can use this.</p></div></body></html>"""

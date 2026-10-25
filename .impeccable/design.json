@@ -1,0 +1,608 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-10-25T22:48:26+00:00",
+  "title": "Design System: PlaylistDrop",
+  "extensions": {
+    "colorMeta": {
+      "sticker": {
+        "role": "primary",
+        "displayName": "Day-Glo Sticker Orange",
+        "canonical": "oklch(70.1% 0.200 44)",
+        "tonalRamp": [
+          "oklch(15% 0.070 44)",
+          "oklch(26% 0.123 44)",
+          "oklch(38% 0.176 44)",
+          "oklch(49% 0.200 44)",
+          "oklch(61% 0.200 44)",
+          "oklch(72% 0.200 44)",
+          "oklch(84% 0.170 44)",
+          "oklch(95% 0.116 44)"
+        ]
+      },
+      "cobalt": {
+        "role": "secondary",
+        "displayName": "Press Cobalt",
+        "canonical": "oklch(49.0% 0.221 267)",
+        "tonalRamp": [
+          "oklch(15% 0.077 267)",
+          "oklch(26% 0.136 267)",
+          "oklch(38% 0.195 267)",
+          "oklch(49% 0.221 267)",
+          "oklch(61% 0.221 267)",
+          "oklch(72% 0.221 267)",
+          "oklch(84% 0.188 267)",
+          "oklch(95% 0.129 267)"
+        ]
+      },
+      "tomato": {
+        "role": "secondary",
+        "displayName": "Tomato Card",
+        "canonical": "oklch(62.2% 0.198 32)",
+        "tonalRamp": [
+          "oklch(15% 0.069 32)",
+          "oklch(26% 0.122 32)",
+          "oklch(38% 0.175 32)",
+          "oklch(49% 0.198 32)",
+          "oklch(61% 0.198 32)",
+          "oklch(72% 0.198 32)",
+          "oklch(84% 0.168 32)",
+          "oklch(95% 0.115 32)"
+        ]
+      },
+      "mustard": {
+        "role": "secondary",
+        "displayName": "Mustard Board",
+        "canonical": "oklch(79.2% 0.157 86)",
+        "tonalRamp": [
+          "oklch(15% 0.055 86)",
+          "oklch(26% 0.097 86)",
+          "oklch(38% 0.139 86)",
+          "oklch(49% 0.157 86)",
+          "oklch(61% 0.157 86)",
+          "oklch(72% 0.157 86)",
+          "oklch(84% 0.133 86)",
+          "oklch(95% 0.091 86)"
+        ]
+      },
+      "green": {
+        "role": "secondary",
+        "displayName": "Bin Green",
+        "canonical": "oklch(50.8% 0.109 159)",
+        "tonalRamp": [
+          "oklch(15% 0.038 159)",
+          "oklch(26% 0.067 159)",
+          "oklch(38% 0.096 159)",
+          "oklch(49% 0.109 159)",
+          "oklch(61% 0.109 159)",
+          "oklch(72% 0.109 159)",
+          "oklch(84% 0.093 159)",
+          "oklch(95% 0.064 159)"
+        ]
+      },
+      "pink": {
+        "role": "secondary",
+        "displayName": "Sleeve Pink",
+        "canonical": "oklch(69.9% 0.160 355)",
+        "tonalRamp": [
+          "oklch(15% 0.056 355)",
+          "oklch(26% 0.099 355)",
+          "oklch(38% 0.141 355)",
+          "oklch(49% 0.160 355)",
+          "oklch(61% 0.160 355)",
+          "oklch(72% 0.160 355)",
+          "oklch(84% 0.136 355)",
+          "oklch(95% 0.093 355)"
+        ]
+      },
+      "stock-ink": {
+        "role": "secondary",
+        "displayName": "Stock Ink",
+        "tonalRamp": [
+          "oklch(15% 0.000 90)",
+          "oklch(26% 0.000 90)",
+          "oklch(38% 0.000 90)",
+          "oklch(49% 0.000 90)",
+          "oklch(61% 0.000 90)",
+          "oklch(72% 0.000 90)",
+          "oklch(84% 0.000 90)",
+          "oklch(95% 0.000 90)"
+        ]
+      },
+      "ground": {
+        "role": "neutral",
+        "displayName": "Bin-Liner Off-White",
+        "canonical": "oklch(95.7% 0.007 107)",
+        "tonalRamp": [
+          "oklch(15% 0.007 107)",
+          "oklch(26% 0.007 107)",
+          "oklch(38% 0.007 107)",
+          "oklch(49% 0.007 107)",
+          "oklch(61% 0.007 107)",
+          "oklch(72% 0.007 107)",
+          "oklch(84% 0.007 107)",
+          "oklch(95% 0.007 107)"
+        ]
+      },
+      "sleeve": {
+        "role": "neutral",
+        "displayName": "Sleeve White",
+        "canonical": "oklch(100.0% 0.000 90)",
+        "tonalRamp": [
+          "oklch(15% 0.000 90)",
+          "oklch(26% 0.000 90)",
+          "oklch(38% 0.000 90)",
+          "oklch(49% 0.000 90)",
+          "oklch(61% 0.000 90)",
+          "oklch(72% 0.000 90)",
+          "oklch(84% 0.000 90)",
+          "oklch(95% 0.000 90)"
+        ]
+      },
+      "seam": {
+        "role": "neutral",
+        "displayName": "Hairline Seam",
+        "canonical": "oklch(91.1% 0.008 107)",
+        "tonalRamp": [
+          "oklch(15% 0.008 107)",
+          "oklch(26% 0.008 107)",
+          "oklch(38% 0.008 107)",
+          "oklch(49% 0.008 107)",
+          "oklch(61% 0.008 107)",
+          "oklch(72% 0.008 107)",
+          "oklch(84% 0.008 107)",
+          "oklch(95% 0.008 107)"
+        ]
+      },
+      "ink": {
+        "role": "neutral",
+        "displayName": "Crate Ink",
+        "canonical": "oklch(19.1% 0.000 90)",
+        "tonalRamp": [
+          "oklch(15% 0.000 90)",
+          "oklch(26% 0.000 90)",
+          "oklch(38% 0.000 90)",
+          "oklch(49% 0.000 90)",
+          "oklch(61% 0.000 90)",
+          "oklch(72% 0.000 90)",
+          "oklch(84% 0.000 90)",
+          "oklch(95% 0.000 90)"
+        ]
+      },
+      "ink-2": {
+        "role": "neutral",
+        "displayName": "Faded Ink",
+        "canonical": "oklch(47.3% 0.008 107)",
+        "tonalRamp": [
+          "oklch(15% 0.008 107)",
+          "oklch(26% 0.008 107)",
+          "oklch(38% 0.008 107)",
+          "oklch(49% 0.008 107)",
+          "oklch(61% 0.008 107)",
+          "oklch(72% 0.008 107)",
+          "oklch(84% 0.008 107)",
+          "oklch(95% 0.008 107)"
+        ]
+      },
+      "ink-3": {
+        "role": "neutral",
+        "displayName": "Pencil Grey",
+        "canonical": "oklch(52.6% 0.008 107)",
+        "tonalRamp": [
+          "oklch(15% 0.008 107)",
+          "oklch(26% 0.008 107)",
+          "oklch(38% 0.008 107)",
+          "oklch(49% 0.008 107)",
+          "oklch(61% 0.008 107)",
+          "oklch(72% 0.008 107)",
+          "oklch(84% 0.008 107)",
+          "oklch(95% 0.008 107)"
+        ]
+      },
+      "inverse": {
+        "role": "neutral",
+        "displayName": "Dock Black",
+        "tonalRamp": [
+          "oklch(15% 0.000 90)",
+          "oklch(26% 0.000 90)",
+          "oklch(38% 0.000 90)",
+          "oklch(49% 0.000 90)",
+          "oklch(61% 0.000 90)",
+          "oklch(72% 0.000 90)",
+          "oklch(84% 0.000 90)",
+          "oklch(95% 0.000 90)"
+        ]
+      },
+      "inverse-ink": {
+        "role": "neutral",
+        "displayName": "Dock Ink",
+        "canonical": "oklch(97.2% 0.005 106)",
+        "tonalRamp": [
+          "oklch(15% 0.005 106)",
+          "oklch(26% 0.005 106)",
+          "oklch(38% 0.005 106)",
+          "oklch(49% 0.005 106)",
+          "oklch(61% 0.005 106)",
+          "oklch(72% 0.005 106)",
+          "oklch(84% 0.005 106)",
+          "oklch(95% 0.005 106)"
+        ]
+      },
+      "fail": {
+        "role": "neutral",
+        "displayName": "Failure Red",
+        "canonical": "oklch(54.9% 0.190 31)",
+        "tonalRamp": [
+          "oklch(15% 0.066 31)",
+          "oklch(26% 0.117 31)",
+          "oklch(38% 0.168 31)",
+          "oklch(49% 0.190 31)",
+          "oklch(61% 0.190 31)",
+          "oklch(72% 0.190 31)",
+          "oklch(84% 0.161 31)",
+          "oklch(95% 0.111 31)"
+        ]
+      },
+      "ground-dark": {
+        "role": "neutral",
+        "displayName": "Black Bin",
+        "canonical": "oklch(16.8% 0.000 90)",
+        "tonalRamp": [
+          "oklch(15% 0.000 90)",
+          "oklch(26% 0.000 90)",
+          "oklch(38% 0.000 90)",
+          "oklch(49% 0.000 90)",
+          "oklch(61% 0.000 90)",
+          "oklch(72% 0.000 90)",
+          "oklch(84% 0.000 90)",
+          "oklch(95% 0.000 90)"
+        ]
+      },
+      "sleeve-dark": {
+        "role": "neutral",
+        "displayName": "Charcoal Sleeve",
+        "canonical": "oklch(21.7% 0.002 107)",
+        "tonalRamp": [
+          "oklch(15% 0.002 107)",
+          "oklch(26% 0.002 107)",
+          "oklch(38% 0.002 107)",
+          "oklch(49% 0.002 107)",
+          "oklch(61% 0.002 107)",
+          "oklch(72% 0.002 107)",
+          "oklch(84% 0.002 107)",
+          "oklch(95% 0.002 107)"
+        ]
+      },
+      "seam-dark": {
+        "role": "neutral",
+        "displayName": "Hairline Seam (dark)",
+        "canonical": "oklch(28.8% 0.004 107)",
+        "tonalRamp": [
+          "oklch(15% 0.004 107)",
+          "oklch(26% 0.004 107)",
+          "oklch(38% 0.004 107)",
+          "oklch(49% 0.004 107)",
+          "oklch(61% 0.004 107)",
+          "oklch(72% 0.004 107)",
+          "oklch(84% 0.004 107)",
+          "oklch(95% 0.004 107)"
+        ]
+      },
+      "ink-dark": {
+        "role": "neutral",
+        "displayName": "Crate Ink (dark)",
+        "canonical": "oklch(95.7% 0.007 107)",
+        "tonalRamp": [
+          "oklch(15% 0.007 107)",
+          "oklch(26% 0.007 107)",
+          "oklch(38% 0.007 107)",
+          "oklch(49% 0.007 107)",
+          "oklch(61% 0.007 107)",
+          "oklch(72% 0.007 107)",
+          "oklch(84% 0.007 107)",
+          "oklch(95% 0.007 107)"
+        ]
+      },
+      "ink-2-dark": {
+        "role": "neutral",
+        "displayName": "Faded Ink (dark)",
+        "canonical": "oklch(76.8% 0.010 107)",
+        "tonalRamp": [
+          "oklch(15% 0.010 107)",
+          "oklch(26% 0.010 107)",
+          "oklch(38% 0.010 107)",
+          "oklch(49% 0.010 107)",
+          "oklch(61% 0.010 107)",
+          "oklch(72% 0.010 107)",
+          "oklch(84% 0.010 107)",
+          "oklch(95% 0.010 107)"
+        ]
+      },
+      "ink-3-dark": {
+        "role": "neutral",
+        "displayName": "Pencil Grey (dark)",
+        "canonical": "oklch(61.5% 0.009 107)",
+        "tonalRamp": [
+          "oklch(15% 0.009 107)",
+          "oklch(26% 0.009 107)",
+          "oklch(38% 0.009 107)",
+          "oklch(49% 0.009 107)",
+          "oklch(61% 0.009 107)",
+          "oklch(72% 0.009 107)",
+          "oklch(84% 0.009 107)",
+          "oklch(95% 0.009 107)"
+        ]
+      },
+      "inverse-dark": {
+        "role": "neutral",
+        "displayName": "Dock Black (dark)",
+        "tonalRamp": [
+          "oklch(15% 0.000 90)",
+          "oklch(26% 0.000 90)",
+          "oklch(38% 0.000 90)",
+          "oklch(49% 0.000 90)",
+          "oklch(61% 0.000 90)",
+          "oklch(72% 0.000 90)",
+          "oklch(84% 0.000 90)",
+          "oklch(95% 0.000 90)"
+        ]
+      },
+      "plain-stock-dark": {
+        "role": "neutral",
+        "displayName": "Charcoal Stock",
+        "canonical": "oklch(26.8% 0.004 107)",
+        "tonalRamp": [
+          "oklch(15% 0.004 107)",
+          "oklch(26% 0.004 107)",
+          "oklch(38% 0.004 107)",
+          "oklch(49% 0.004 107)",
+          "oklch(61% 0.004 107)",
+          "oklch(72% 0.004 107)",
+          "oklch(84% 0.004 107)",
+          "oklch(95% 0.004 107)"
+        ]
+      },
+      "fail-dark": {
+        "role": "neutral",
+        "displayName": "Failure Red (dark)",
+        "canonical": "oklch(73.0% 0.167 31)",
+        "tonalRamp": [
+          "oklch(15% 0.058 31)",
+          "oklch(26% 0.103 31)",
+          "oklch(38% 0.147 31)",
+          "oklch(49% 0.167 31)",
+          "oklch(61% 0.167 31)",
+          "oklch(72% 0.167 31)",
+          "oklch(84% 0.142 31)",
+          "oklch(95% 0.097 31)"
+        ]
+      }
+    },
+    "typographyMeta": {
+      "display": {
+        "displayName": "Wordmark",
+        "purpose": "PLAYLIST[DROP] wordmark only."
+      },
+      "headline": {
+        "displayName": "Divider Tab",
+        "purpose": "Playlist names on divider tabs; also help and library headings at 20px / 17px."
+      },
+      "title": {
+        "displayName": "Dock Button",
+        "purpose": "The GET IT button."
+      },
+      "numeral": {
+        "displayName": "Sticker Numeral",
+        "purpose": "Sticker sizes, live percentages, row index numbers (13px, width 80%)."
+      },
+      "body": {
+        "displayName": "Body",
+        "purpose": "Default reading text; link input at 16.5px."
+      },
+      "body-strong": {
+        "displayName": "Track Title",
+        "purpose": "Track titles, clamped to two lines."
+      },
+      "label": {
+        "displayName": "Label",
+        "purpose": "Band summaries and band action buttons."
+      },
+      "meta": {
+        "displayName": "Meta",
+        "purpose": "Meta lines, sizes, counts, engine footer."
+      }
+    },
+    "shadows": [],
+    "motion": [
+      {
+        "name": "ease-crate",
+        "value": "cubic-bezier(0.2, 0.9, 0.3, 1)",
+        "purpose": "The single easing for every transition and animation."
+      },
+      {
+        "name": "press",
+        "value": "120ms",
+        "purpose": "Buttons scale to 0.96 on press."
+      },
+      {
+        "name": "sticker-hover",
+        "value": "140ms",
+        "purpose": "Sticker scale on hover (1.06) and press (0.94)."
+      },
+      {
+        "name": "color-swap",
+        "value": "150ms",
+        "purpose": "Background/colour swaps on line buttons and segments."
+      },
+      {
+        "name": "divider-arrive",
+        "value": "260ms",
+        "purpose": "A playlist added while watching slides up 12px into the crate (never on first load)."
+      },
+      {
+        "name": "sticker-slap",
+        "value": "320ms",
+        "purpose": "A freshly landed sticker slaps on from -24deg / 0.4 scale, overshoots to 1.06, settles at its tilt."
+      },
+      {
+        "name": "rule-fill",
+        "value": "450ms",
+        "purpose": "Duration-rule progress fill (scaleX)."
+      },
+      {
+        "name": "reduced-motion",
+        "value": "1ms",
+        "purpose": "All animation and transition durations under prefers-reduced-motion."
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "wide",
+        "value": "640px"
+      }
+    ]
+  },
+  "components": [
+    {
+      "name": "GET IT Button",
+      "kind": "button",
+      "refersTo": "button-get",
+      "description": "The dock's primary action: sticker orange, condensed Archivo caps, square.",
+      "html": "<button class=\"ds-get\">Get it</button>",
+      "css": ".ds-get{height:48px;padding:0 18px;border:0;border-radius:0;background:var(--sticker,#ff6a13);color:#141414;font:900 20px/1 var(--display,\"Archivo\",\"Arial Narrow\",sans-serif);font-stretch:70%;text-transform:uppercase;letter-spacing:.02em;cursor:pointer;transition:transform 120ms cubic-bezier(0.2,0.9,0.3,1),opacity 150ms}.ds-get:active{transform:scale(.96)}.ds-get:focus-visible{outline:3px solid #ff6a13;outline-offset:2px}.ds-get:disabled{opacity:.6;cursor:progress}"
+    },
+    {
+      "name": "Band Save All (solid)",
+      "kind": "button",
+      "refersTo": "button-act-solid",
+      "description": "Black Save-all action sitting on a divider band; same on every stock colour.",
+      "html": "<div class=\"ds-band-demo\"><a class=\"ds-act-solid\" href=\"#\">Save all · 24 MB</a></div>",
+      "css": ".ds-band-demo{background:#e8b21c;padding:8px 14px}.ds-act-solid{display:inline-flex;align-items:center;min-height:36px;padding:0 13px;background:#141414;color:#fff;font:700 13.5px/1 -apple-system,BlinkMacSystemFont,\"Segoe UI\",Roboto,Arial,sans-serif;text-decoration:none;border-radius:0;transition:transform 120ms cubic-bezier(0.2,0.9,0.3,1),background-color 150ms}.ds-act-solid:hover{background:#000}.ds-act-solid:active{transform:scale(.96)}.ds-act-solid:focus-visible{outline:3px solid #ff6a13;outline-offset:2px}"
+    },
+    {
+      "name": "Band Line Action",
+      "kind": "button",
+      "refersTo": "button-act-line",
+      "description": "Outline action (Retry, Stop, Remove) in the band's text colour; destructive ones sit at the far end.",
+      "html": "<div class=\"ds-band-demo2\"><button class=\"ds-act-line\">Remove</button></div>",
+      "css": ".ds-band-demo2{--stock:#2b4bdb;--stock-text:#fff;background:var(--stock);color:var(--stock-text);padding:8px 14px;display:flex;justify-content:flex-end}.ds-act-line{display:inline-flex;align-items:center;min-height:36px;padding:0 13px;background:transparent;color:var(--stock-text);border:1.5px solid currentColor;border-radius:0;font:700 13.5px/1 -apple-system,BlinkMacSystemFont,\"Segoe UI\",Roboto,Arial,sans-serif;cursor:pointer;transition:transform 120ms cubic-bezier(0.2,0.9,0.3,1),background-color 150ms,color 150ms}.ds-act-line:hover{background:var(--stock-text);color:var(--stock)}.ds-act-line:active{transform:scale(.96)}.ds-act-line:focus-visible{outline:3px solid #ff6a13;outline-offset:2px}"
+    },
+    {
+      "name": "Price Sticker",
+      "kind": "custom",
+      "refersTo": "sticker",
+      "description": "Signature save button for one finished track: tilted day-glo circle showing the file size.",
+      "html": "<a class=\"ds-sticker\" href=\"#\" aria-label=\"Save track, 2.8 MB\">2.8<small>MB</small></a>",
+      "css": ".ds-sticker{--tilt:-6deg;width:52px;height:52px;border-radius:50%;display:grid;place-content:center;text-align:center;background:#ff6a13;color:#141414;text-decoration:none;font:900 15px/.95 \"Archivo\",\"Arial Narrow\",sans-serif;font-stretch:70%;font-variant-numeric:tabular-nums;transform:rotate(var(--tilt));transition:transform 140ms cubic-bezier(0.2,0.9,0.3,1)}.ds-sticker small{display:block;font:700 9px/1 -apple-system,BlinkMacSystemFont,\"Segoe UI\",Roboto,Arial,sans-serif;letter-spacing:.08em;margin-top:2px}.ds-sticker:hover{transform:rotate(var(--tilt)) scale(1.06)}.ds-sticker:active{transform:rotate(var(--tilt)) scale(.94)}.ds-sticker:focus-visible{outline:3px solid #ff6a13;outline-offset:2px}"
+    },
+    {
+      "name": "Link Field",
+      "kind": "input",
+      "refersTo": "input-link",
+      "description": "Square sleeve-white paste field in the black dock; 16.5px text so iOS never zooms.",
+      "html": "<div class=\"ds-dock-demo\"><input class=\"ds-input\" type=\"url\" placeholder=\"Paste a YouTube playlist link\"></div>",
+      "css": ".ds-dock-demo{background:#141414;padding:10px 12px}.ds-input{width:100%;height:48px;padding:0 12px;border:0;border-radius:0;background:#fff;color:#141414;font:400 16.5px/1.4 -apple-system,BlinkMacSystemFont,\"Segoe UI\",Roboto,Arial,sans-serif;caret-color:#ff6a13;outline:1px solid #f6f6f2;outline-offset:-1px;-webkit-appearance:none;appearance:none}.ds-input::placeholder{color:#6b6b66}.ds-input:focus-visible{outline:3px solid #ff6a13;outline-offset:0}"
+    },
+    {
+      "name": "Format Segment",
+      "kind": "chip",
+      "refersTo": "segment",
+      "description": "Three square outlined cells on the dock; the chosen format fills light.",
+      "html": "<div class=\"ds-seg-wrap\"><div class=\"ds-seg\"><label><input type=\"radio\" name=\"ds-mode\" checked><span>Video</span></label><label><input type=\"radio\" name=\"ds-mode\"><span>M4A</span></label><label><input type=\"radio\" name=\"ds-mode\"><span>MP3</span></label></div></div>",
+      "css": ".ds-seg-wrap{background:#141414;padding:10px 12px}.ds-seg{display:grid;grid-template-columns:repeat(3,1fr);gap:6px}.ds-seg label{position:relative}.ds-seg input{position:absolute;inset:0;opacity:0;margin:0;cursor:pointer}.ds-seg span{display:grid;place-items:center;height:40px;border:1.5px solid #f6f6f2;color:#f6f6f2;font:700 14px/1 -apple-system,BlinkMacSystemFont,\"Segoe UI\",Roboto,Arial,sans-serif;transition:background-color 150ms,color 150ms}.ds-seg input:checked+span{background:#f6f6f2;color:#141414}.ds-seg input:focus-visible+span{outline:3px solid #ff6a13;outline-offset:2px}"
+    },
+    {
+      "name": "Divider Card",
+      "kind": "card",
+      "refersTo": "divider-tab",
+      "description": "Signature playlist container: condensed caps tab over a band in one flat card-stock field, then sleeve rows.",
+      "html": "<section class=\"ds-divider\"><h2 class=\"ds-tab\">NASA+ Series Trailers</h2><div class=\"ds-band\"><span>Video · 480p · 8 of 8 saved</span><a class=\"ds-solid\" href=\"#\">Save all · 24 MB</a></div><ol class=\"ds-rows\"><li>Track row</li><li>Track row</li></ol></section>",
+      "css": ".ds-divider{--stock:#e8b21c;--stock-text:#141414;font-family:-apple-system,BlinkMacSystemFont,\"Segoe UI\",Roboto,Arial,sans-serif}.ds-tab{display:inline-block;margin:0;background:var(--stock);color:var(--stock-text);padding:9px 14px 6px;font:900 21px/1.05 \"Archivo\",\"Arial Narrow\",sans-serif;font-stretch:62%;text-transform:uppercase;letter-spacing:.015em}.ds-band{display:flex;align-items:center;justify-content:space-between;gap:10px;flex-wrap:wrap;min-height:48px;padding:8px 10px 8px 14px;background:var(--stock);color:var(--stock-text);font-size:13.5px;font-weight:600}.ds-solid{display:inline-flex;align-items:center;min-height:36px;padding:0 13px;background:#141414;color:#fff;font-weight:700;text-decoration:none}.ds-solid:hover{background:#000}.ds-solid:focus-visible{outline:3px solid #ff6a13;outline-offset:2px}.ds-rows{list-style:none;margin:0;padding:0;background:#fff}.ds-rows li{padding:10px 14px;min-height:44px;border-top:1px solid #e2e2dc;color:#141414;font-size:14.5px;font-weight:600}.ds-rows li:first-child{border-top:0}"
+    },
+    {
+      "name": "Track Row",
+      "kind": "custom",
+      "refersTo": "track-row",
+      "description": "Fixed row furniture with the duration rule: length is running time, fill is progress, dashed when waiting.",
+      "html": "<ol class=\"ds-trows\"><li class=\"ds-row\"><span class=\"ds-n\">1</span><span class=\"ds-thumb\"></span><span class=\"ds-body\"><span class=\"ds-t\">NASA Explorers: New Series Coming Soon</span><span class=\"ds-rule\" style=\"--len:70%;--p:.55\"><i></i></span><span class=\"ds-meta\">2.1 MB/s · 4s left</span></span><span class=\"ds-pct\">55%</span></li><li class=\"ds-row ds-queued\"><span class=\"ds-n\">2</span><span class=\"ds-thumb\"></span><span class=\"ds-body\"><span class=\"ds-t\">Other Worlds</span><span class=\"ds-rule\" style=\"--len:60%\"><i></i></span><span class=\"ds-meta\">Waiting · 0:43</span></span><span></span></li></ol>",
+      "css": ".ds-trows{list-style:none;margin:0;padding:0;background:#fff;font-family:-apple-system,BlinkMacSystemFont,\"Segoe UI\",Roboto,Arial,sans-serif;color:#141414}.ds-row{display:grid;grid-template-columns:22px 64px minmax(0,1fr) 56px;gap:10px;align-items:center;padding:10px 10px 10px 8px;min-height:66px;border-top:1px solid #e2e2dc}.ds-row:first-child{border-top:0}.ds-n{font:800 13px/1 \"Archivo\",\"Arial Narrow\",sans-serif;font-stretch:80%;color:#6b6b66;text-align:right}.ds-thumb{width:64px;aspect-ratio:16/9;background:#e2e2dc}.ds-body{min-width:0;display:grid}.ds-t{font-weight:600;font-size:14.5px;line-height:1.25}.ds-meta{font-size:12.5px;color:#5c5c57;margin-top:3px;font-variant-numeric:tabular-nums}.ds-rule{display:block;position:relative;height:3px;margin-top:7px;width:var(--len,100%);min-width:24px;background:#e2e2dc}.ds-rule i{position:absolute;inset:0;background:#141414;transform-origin:left;transform:scaleX(var(--p,0));transition:transform 450ms cubic-bezier(0.2,0.9,0.3,1)}.ds-queued .ds-rule{height:0;background:none;border-top:3px dashed #6b6b66}.ds-queued .ds-rule i{display:none}.ds-queued .ds-t{color:#5c5c57}.ds-pct{font:800 15px/1 \"Archivo\",\"Arial Narrow\",sans-serif;font-stretch:75%;text-align:center;font-variant-numeric:tabular-nums}"
+    }
+  ],
+  "narrative": {
+    "northStar": "The Crate Digger",
+    "overview": "PlaylistDrop is a record-shop crate held in one hand. Every playlist is a divider card: a flat, unmodulated band of card stock (cobalt, mustard, tomato, green, pink) with a condensed all-caps tab naming it. Behind each divider sit the tracks as plain white sleeves separated by hairline seams. When a track has landed on the computer, it earns a fluorescent orange price sticker, slightly askew, and tapping that sticker is how the file comes home to the iPhone. The bin is ink black and bin-liner off-white in light mode, a black bin with charcoal sleeves in dark mode; the divider stock and the stickers never change with the theme, because card stock and day-glo paper do not.\n\nThe surface is dense and operational, built for a thumb: everything you act on is in the black dock at the bottom of the screen, everything you read fills the crate above it. Depth comes from flat fields laid next to each other, never from shadows or gradients. Corners are square throughout; the only circle in the world is the sticker. Two typographic voices split the work: heavy condensed Archivo caps for the things that behave like printed labels (wordmark, divider tabs, the GET IT button, numerals on stickers and rows), and the phone's own system face for everything you read.\n\nThe world deliberately refuses the generic rounded-card dashboard with soft shadows and a single blue Download button, and it refuses the sketchy-downloader look (popups, fake buttons, YouTube-red chrome).",
+    "keyCharacteristics": [
+      "Flat divider-card colour fields own whole bands, one per playlist, never two the same colour in a row.",
+      "Day-glo orange is the \"take it home\" colour: stickers, the GET IT button, file Save buttons, focus.",
+      "Square corners and 1px hairline seams; zero shadows, zero gradients.",
+      "Condensed heavy Archivo caps for labels, system UI for reading.",
+      "A fixed black dock at the bottom carries every input; the crate scrolls above it.",
+      "Track state is shown by form (a duration rule that is dashed, filling, solid or struck), not by colour badges."
+    ],
+    "rules": [
+      {
+        "name": "The Sticker Is The Save Rule",
+        "body": "Day-glo orange marks only things that move a file onto the phone (stickers, GET IT, file Save) plus focus, caret and selection. It is never decoration, never a background band, never a divider colour.",
+        "section": "colors"
+      },
+      {
+        "name": "The Card Stock Rule",
+        "body": "Divider colours are printed card, not theme: the same five hexes in light and dark mode, always as a flat full-width field shared by tab and band, never tinted, faded, gradiented or used as a thin accent line except on the library shelf's 4px top edge.",
+        "section": "colors"
+      },
+      {
+        "name": "The Neighbour Rule",
+        "body": "A playlist's colour is derived from its name so it stays the same across visits, but two adjacent dividers never share a colour; the lower one steps to the next stock.",
+        "section": "colors"
+      },
+      {
+        "name": "The Black Dock Rule",
+        "body": "The dock is black in both themes. It never takes the page ground colour.",
+        "section": "colors"
+      },
+      {
+        "name": "The Two Voices Rule",
+        "body": "Archivo is only ever heavy, condensed and (except numerals) uppercase, and only on things that behave like printed labels: wordmark, divider tabs, panel headings, the GET IT button, numerals. Sentences, titles, meta and form text are always the system face.",
+        "section": "typography"
+      },
+      {
+        "name": "The Tabular Rule",
+        "body": "Every number that changes (counts, sizes, speeds, durations, percentages, indexes) uses tabular figures so columns hold still while a playlist fills.",
+        "section": "typography"
+      },
+      {
+        "name": "The Thumb Dock Rule",
+        "body": "Inputs live in the bottom dock, content lives in the crate. Never put the link form above the list.",
+        "section": "layout"
+      },
+      {
+        "name": "The Flat Stock Rule",
+        "body": "No `box-shadow`, no `text-shadow`, no gradient, no blur, in any state. If something needs to read as on top, it gets a different flat field (black, card stock or orange).",
+        "section": "elevation"
+      },
+      {
+        "name": "The One Circle Rule",
+        "body": "The sticker is the only round thing in the world. Nothing else gets a radius.",
+        "section": "shapes"
+      }
+    ],
+    "dos": [
+      "**Do** give every playlist one flat card-stock field shared by its tab and band, and keep adjacent dividers different colours.",
+      "**Do** reserve Day-Glo Sticker Orange (#ff6a13) for saving files and for focus; put ink text on it, never white.",
+      "**Do** keep every corner square; the 52px sticker is the only circle.",
+      "**Do** set labels in Archivo 900 condensed caps and everything readable in the system face, with tabular figures for all changing numbers.",
+      "**Do** show track state by the duration rule's form (dashed, filling, solid, struck) and keep the row's furniture in fixed positions.",
+      "**Do** keep destructive actions (Stop, Remove) as line buttons pushed to the far end of the band, away from Save all.",
+      "**Do** keep the dock black in both themes and keep every input in it.",
+      "**Do** honour reduced motion: transitions and animations collapse to 1ms, and motion never hides content."
+    ],
+    "donts": [
+      "**Don't** add shadows, gradients, blur or glass to any surface.",
+      "**Don't** round cards, buttons or inputs, and don't use pill buttons.",
+      "**Don't** introduce a blue primary button or a rounded-card dashboard layout.",
+      "**Don't** use YouTube red, play-button motifs or anything that resembles a downloader ad site (popups, fake download buttons).",
+      "**Don't** tint or theme the card-stock colours for dark mode; they are printed card.",
+      "**Don't** use orange as decoration, a divider colour or a background band.",
+      "**Don't** put the link form at the top of the page above the list."
+    ]
+  }
+}
