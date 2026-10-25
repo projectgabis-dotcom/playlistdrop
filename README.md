@@ -29,7 +29,7 @@ You need **Python 3.10+** and **ffmpeg**. Install the Node.js or Deno JavaScript
 Then install and run PlaylistDrop:
 
 ```bash
-pipx install git+https://github.com/OWNER/playlistdrop
+pipx install git+https://github.com/projectgabis-dotcom/playlistdrop
 playlistdrop
 ```
 
@@ -91,7 +91,7 @@ playlistdrop update                                                       # upda
 docker run -d --name playlistdrop -p 8765:8765 \
   -v ~/Downloads/PlaylistDrop:/downloads \
   -e PLAYLISTDROP_HOST_IP=192.168.1.20 \
-  ghcr.io/OWNER/playlistdrop:latest
+  ghcr.io/projectgabis-dotcom/playlistdrop:latest
 docker logs playlistdrop    # shows the QR code
 ```
 
@@ -114,7 +114,7 @@ A hosted "paste a link" site sounds easier, but it doesn't work in practice. You
 ## Development
 
 ```bash
-git clone https://github.com/OWNER/playlistdrop && cd playlistdrop
+git clone https://github.com/projectgabis-dotcom/playlistdrop && cd playlistdrop
 python -m venv .venv && . .venv/bin/activate
 pip install -e ".[dev]"
 pytest -m "not network"     # fast tests, no internet

@@ -23,6 +23,10 @@ dependencies = [
   "segno>=1.6",
 ]
 
+[project.urls]
+Homepage = "https://github.com/projectgabis-dotcom/playlistdrop"
+Issues = "https://github.com/projectgabis-dotcom/playlistdrop/issues"
+
 [project.optional-dependencies]
 dev = ["pytest>=8", "httpx>=0.27"]
 
