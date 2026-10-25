@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="color-scheme" content="light dark">
+  <meta name="theme-color" content="#f4f5f8" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#121419" media="(prefers-color-scheme: dark)">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-title" content="PlaylistDrop">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <title>PlaylistDrop</title>
+  <link rel="icon" href="/static/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="/static/icon-180.png">
+  <link rel="manifest" href="/manifest.webmanifest">
+  <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <defs>
+      <symbol id="i-logo" viewBox="0 0 24 24"><path d="M4 6h11M4 10h11M4 14h6" /><path d="M18 9v10m0 0-3.2-3.2M18 19l3.2-3.2" /></symbol>
+      <symbol id="i-down" viewBox="0 0 24 24"><path d="M12 4v12m0 0-5-5m5 5 5-5M5 20h14" /></symbol>
+      <symbol id="i-zip" viewBox="0 0 24 24"><path d="M6 3h8l4 4v14H6z" /><path d="M14 3v4h4M11 9h2M11 12h2M11 15h2" /></symbol>
+      <symbol id="i-stop" viewBox="0 0 24 24"><rect x="6" y="6" width="12" height="12" rx="2" /></symbol>
+      <symbol id="i-retry" viewBox="0 0 24 24"><path d="M4 12a8 8 0 1 0 2.4-5.7M4 4v4.5h4.5" /></symbol>
+      <symbol id="i-x" viewBox="0 0 24 24"><path d="M6 6l12 12M18 6 6 18" /></symbol>
+      <symbol id="i-check" viewBox="0 0 24 24"><path d="m5 12.5 4.5 4.5L19 7.5" /></symbol>
+      <symbol id="i-alert" viewBox="0 0 24 24"><path d="M12 8v5M12 16.5v.5" /><circle cx="12" cy="12" r="9" /></symbol>
+      <symbol id="i-help" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9" /><path d="M9.6 9.5a2.5 2.5 0 1 1 3.4 2.3c-.6.3-1 .8-1 1.5v.4M12 16.8v.2" /></symbol>
+      <symbol id="i-folder" viewBox="0 0 24 24"><path d="M3 7a2 2 0 0 1 2-2h4l2 2h8a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" /></symbol>
+    </defs>
+  </svg>
+
+  <header class="bar">
+    <a class="brand" href="/" aria-label="PlaylistDrop home">
+      <svg class="ico brand-mark" aria-hidden="true"><use href="#i-logo"/></svg>
+      <span>PlaylistDrop</span>
+    </a>
+    <button class="ghost icon-btn" id="helpBtn" type="button" aria-label="How to save files on iPhone" aria-expanded="false" aria-controls="help">
+      <svg class="ico" aria-hidden="true"><use href="#i-help"/></svg>
+    </button>
+  </header>
+
+  <main>
+    <form id="composer" class="composer" autocomplete="off">
+      <h1>Download a whole playlist</h1>
+      <label class="field">
+        <span class="sr-only">YouTube playlist or video link</span>
+        <input id="url" name="url" type="url" inputmode="url" required
+               placeholder="Paste a YouTube playlist link"
+               autocapitalize="off" autocorrect="off" spellcheck="false" enterkeyhint="go">
+      </label>
+
+      <fieldset class="seg" role="radiogroup" aria-label="Format">
+        <label><input type="radio" name="mode" value="video" checked><span>Video<small>MP4</small></span></label>
+        <label><input type="radio" name="mode" value="audio"><span>Audio<small>M4A</small></span></label>
+        <label><input type="radio" name="mode" value="mp3"><span>Audio<small>MP3</small></span></label>
+      </fieldset>
+
+      <div class="row-controls">
+        <label class="quality" id="qualityWrap">
+          <span>Max quality</span>
+          <select id="quality" name="quality">
+            <option value="360">360p · smallest</option>
+            <option value="480">480p</option>
+            <option value="720" selected>720p · HD</option>
+            <option value="1080">1080p · Full HD</option>
+            <option value="1440">1440p</option>
+            <option value="2160">2160p · 4K</option>
+          </select>
+        </label>
+        <button class="primary" id="go" type="submit">
+          <svg class="ico" aria-hidden="true"><use href="#i-down"/></svg>
+          <span>Download</span>
+        </button>
+      </div>
+      <p class="form-error" id="formError" role="alert" hidden></p>
+    </form>
+
+    <section id="help" class="help" hidden aria-labelledby="helpTitle">
+      <h2 id="helpTitle">Getting files onto your iPhone</h2>
+      <ol>
+        <li>Tap <b>Save</b> on a finished item, or <b>Save all</b> for one ZIP of the whole playlist.</li>
+        <li>Safari asks to download it. Files land in <b>Files › Downloads</b>.</li>
+        <li>For a ZIP, tap it once in Files and it unpacks into a folder.</li>
+        <li>Videos to Photos: open the video in Files, tap <b>Share › Save Video</b>.</li>
+        <li>Music: audio files play straight from Files; VLC or Documents can build playlists from the folder.</li>
+      </ol>
+      <p class="muted">Tip: in Safari tap <b>Share › Add to Home Screen</b> to open PlaylistDrop like an app.</p>
+    </section>
+
+    <section aria-labelledby="jobsTitle" class="jobs-wrap">
+      <h2 id="jobsTitle" class="section-title" hidden>Downloads</h2>
+      <div id="jobs" aria-live="polite"></div>
+      <div id="empty" class="empty">
+        <p>Paste a playlist link above. Every video downloads on your computer, then you save them here.</p>
+      </div>
+    </section>
+
+    <section aria-labelledby="libTitle" class="library" id="librarySection" hidden>
+      <h2 id="libTitle" class="section-title">On your computer</h2>
+      <div id="library"></div>
+    </section>
+  </main>
+
+  <footer class="foot">
+    <span id="engine">Connecting…</span>
+  </footer>
+
+  <template id="jobTpl">
+    <article class="job">
+      <header class="job-head">
+        <div class="job-meta">
+          <h3 class="job-title"></h3>
+          <p class="job-sub"></p>
+        </div>
+        <div class="job-actions">
+          <a class="btn small save-all" hidden><svg class="ico" aria-hidden="true"><use href="#i-zip"/></svg><span>Save all</span></a>
+          <button class="ghost small retry" type="button" hidden><svg class="ico" aria-hidden="true"><use href="#i-retry"/></svg><span>Retry failed</span></button>
+          <button class="ghost small stop" type="button" hidden><svg class="ico" aria-hidden="true"><use href="#i-stop"/></svg><span>Stop</span></button>
+          <button class="ghost icon-btn dismiss" type="button" aria-label="Remove from list" hidden><svg class="ico" aria-hidden="true"><use href="#i-x"/></svg></button>
+        </div>
+      </header>
+      <div class="meter" role="progressbar" aria-valuemin="0" aria-valuemax="100"><span></span></div>
+      <p class="job-error" role="alert" hidden></p>
+      <ol class="items"></ol>
+    </article>
+  </template>
+
+  <template id="itemTpl">
+    <li class="item">
+      <span class="fill" aria-hidden="true"></span>
+      <span class="idx"></span>
+      <span class="thumb" aria-hidden="true"></span>
+      <span class="text">
+        <span class="title"></span>
+        <span class="status"></span>
+      </span>
+      <a class="btn small save" hidden><svg class="ico" aria-hidden="true"><use href="#i-down"/></svg><span>Save</span></a>
+      <svg class="ico state-ico" aria-hidden="true"><use href=""/></svg>
+    </li>
+  </template>
+
+  <script src="/static/app.js" defer></script>
+</body>
+</html>

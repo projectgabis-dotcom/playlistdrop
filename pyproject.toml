@@ -1,0 +1,38 @@
+[build-system]
+requires = ["hatchling>=1.21"]
+build-backend = "hatchling.build"
+
+[project]
+name = "playlistdrop"
+version = "0.1.0"
+description = "Download whole YouTube playlists on your computer and save them to your iPhone over Wi-Fi."
+readme = "README.md"
+license = "MIT"
+requires-python = ">=3.10"
+keywords = ["youtube", "playlist", "downloader", "yt-dlp", "iphone", "self-hosted"]
+classifiers = [
+  "Environment :: Web Environment",
+  "Operating System :: OS Independent",
+  "Programming Language :: Python :: 3",
+  "Topic :: Multimedia :: Video",
+]
+dependencies = [
+  "yt-dlp[default,deno]>=2026.10.21",
+  "fastapi>=0.110",
+  "uvicorn>=0.29",
+  "segno>=1.6",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=8", "httpx>=0.27"]
+
+[project.scripts]
+playlistdrop = "playlistdrop.__main__:main"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/playlistdrop"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]
+markers = ["network: hits YouTube (deselect with -m 'not network')"]
